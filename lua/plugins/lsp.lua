@@ -26,23 +26,41 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
-      lspconfig.lua_ls.setup({})
-      lspconfig.gopls.setup({})
-      lspconfig.clangd.setup({})
-      lspconfig.eslint.setup({})
-      lspconfig.jsonls.setup({})
-      lspconfig.marksman.setup({})
-      lspconfig.yamlls.setup({})
-
       -- v3.0.0 부터 사용.
-      -- vim.lsp.config.lua_ls.setup({})
-      -- vim.lsp.config.gopls.setup({})
-      -- vim.lsp.config.clangd.setup({})
-      -- vim.lsp.config.eslint.setup({})
-      -- vim.lsp.config.jsonls.setup({})
-      -- vim.lsp.config.marksman.setup({})
-      -- vim.lsp.config.yamlls.setup({})1
+      vim.lsp.config("lua_ls", {
+        settings = {
+        }
+      })
+
+      vim.lsp.config("gopls", {
+        settings = {
+        }
+      })
+
+      vim.lsp.config("clangd", {
+        settings = {
+        }
+      })
+
+      vim.lsp.config("eslint", {
+        settings = {
+        }
+      })
+
+      vim.lsp.config("jsonls", {
+        settings = {
+        }
+      })
+
+      vim.lsp.config("marksman", {
+        settings = {
+        }
+      })
+
+      vim.lsp.config("yamlls", {
+        settings = {
+        }
+      })
 
       --  vim.lsp.buf.hover: hover documentation
       --  vim.lsp.buf.definition: go to definition
